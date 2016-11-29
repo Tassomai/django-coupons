@@ -30,3 +30,4 @@ coverage/
 *.pot
 local_settings.py
 .ropeproject/
+.idea
