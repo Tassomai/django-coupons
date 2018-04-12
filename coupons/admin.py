@@ -12,6 +12,8 @@ class CouponUserInline(admin.TabularInline):
     model = CouponUser
     extra = 0
 
+    readonly_fields = ('user', 'redeemed_at',)
+
     def get_max_num(self, request, obj=None, **kwargs):
         if obj:
             return obj.user_limit
